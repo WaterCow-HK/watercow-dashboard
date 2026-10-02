@@ -23,13 +23,22 @@ export function exportTasks(markdown, catalog) {
     if (seen.has(id) || !Object.hasOwn(catalog, id))
       throw new Error("Duplicate or untranslated task");
     seen.add(id);
-    const owner = /Joint|Human|Eddie.*(?:DHMO|Gary)/.test(primary)
-      ? "共同負責"
-      : primary === "DHMO"
-        ? "Gary"
-        : /^Eddie(?:\s|;|$)/.test(primary)
-          ? "Eddie"
-          : null;
+    // Attribution and retained authority after a delimiter are not ownership.
+    const ownership = primary.split(/[;(]/, 1)[0].trim();
+    const ownerMap = {
+      Eddie: "Eddie",
+      "Eddie requirement owner": "Eddie",
+      DHMO: "Gary",
+      "Eddie + DHMO": "共同負責",
+      "Eddie + Gary/DHMO": "共同負責",
+      "Eddie + Human": "共同負責",
+      Joint: "共同負責",
+      "Joint/Human": "共同負責",
+      Human: "共同負責",
+    };
+    const owner = Object.hasOwn(ownerMap, ownership)
+      ? ownerMap[ownership]
+      : null;
     if (!owner) throw new Error("Unrecognized owner");
     tasks.push({ id, title: catalog[id], phase: Number(id[1]), status, owner });
   }

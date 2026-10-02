@@ -36,7 +36,7 @@
       "title": "建立需求與測試追蹤表",
       "phase": 0,
       "status": "Done",
-      "owner": "共同負責"
+      "owner": "Eddie"
     },
     {
       "id": "P0-006",
@@ -99,7 +99,7 @@
       "title": "接通治理工作者與審查者身分",
       "phase": 0,
       "status": "Done",
-      "owner": "共同負責"
+      "owner": "Eddie"
     },
     {
       "id": "P1-001",
@@ -141,7 +141,7 @@
       "title": "建立監測、備份驗證與第一階段審查",
       "phase": 1,
       "status": "Ready",
-      "owner": "共同負責"
+      "owner": "Eddie"
     },
     {
       "id": "P2-001",

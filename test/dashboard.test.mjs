@@ -58,6 +58,24 @@ test("exports only curated fields; private content never leaves source", () => {
   ]);
   assert.doesNotMatch(JSON.stringify(tasks), /private|SECRET_CANARY/);
 });
+test("ownership ignores historical attribution and retained authority", () => {
+  for (const [primary, expected] of [
+    ["Eddie (technical handoff; DHMO historical author)", "Eddie"],
+    ["Eddie; existing Joint target authority retained", "Eddie"],
+    ["Eddie; Joint review", "Eddie"],
+    ["Eddie + DHMO (Human)", "共同負責"],
+    ["Joint/Human", "共同負責"],
+    ["Eddie + Human", "共同負責"],
+    ["DHMO", "Gary"],
+  ]) {
+    assert.equal(
+      exportTasks(fixture("P1-001", "Ready", primary), {
+        "P1-001": "帳戶驗證",
+      })[0].owner,
+      expected,
+    );
+  }
+});
 test("export fails closed on missing, duplicate, untranslated and malformed task tables", () => {
   const catalog = { "P1-001": "帳戶驗證" };
   assert.throws(() => exportTasks("", catalog));
