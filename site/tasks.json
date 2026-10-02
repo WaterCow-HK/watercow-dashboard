@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "e4f12abc92d102f91a4d840b9acc2f7dc9288d2f",
-  "sourceDate": "2026-09-26T16:07:02Z",
+  "sourceCommit": "76152f449195eeb346bae9e546d40ce3e8efeb63",
+  "sourceDate": "2026-10-02T15:31:14Z",
   "tasks": [
     {
       "id": "P0-001",
@@ -100,6 +100,13 @@
       "phase": 0,
       "status": "Done",
       "owner": "Eddie"
+    },
+    {
+      "id": "P0-015",
+      "title": "改善驗證效率與檢討時間上限",
+      "phase": 0,
+      "status": "Backlog",
+      "owner": "Gary"
     },
     {
       "id": "P1-001",
