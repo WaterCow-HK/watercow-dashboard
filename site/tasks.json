@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "e4f12abc92d102f91a4d840b9acc2f7dc9288d2f",
+  "sourceDate": "2026-09-26T16:07:02Z",
+  "tasks": [
+    {
+      "id": "P0-001",
+      "title": "確認專案計劃與分工",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-002",
+      "title": "選定技術架構與交付方式",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-003",
+      "title": "登記及分類既有參考專案",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-004",
+      "title": "釐清介面契約與信任邊界",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-005",
+      "title": "建立需求與測試追蹤表",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-006",
+      "title": "整理資料清單與保留政策議題",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Gary"
+    },
+    {
+      "id": "P0-007",
+      "title": "建立威脅模型與安全邊界",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-008",
+      "title": "建立程式庫骨架與自動化檢查",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-009",
+      "title": "發布版本化領域模型與介面契約",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-010",
+      "title": "完成第零階段準備度審查",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-011",
+      "title": "已取代的歷史事件草案",
+      "phase": 0,
+      "status": "Superseded",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-012",
+      "title": "建立自主開發流程與治理工具",
+      "phase": 0,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P0-013",
+      "title": "啟用託管專案協作控制平台",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P0-014",
+      "title": "接通治理工作者與審查者身分",
+      "phase": 0,
+      "status": "Done",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P1-001",
+      "title": "建立開發及預備環境與帳戶驗證",
+      "phase": 1,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P1-002",
+      "title": "實作租戶、生命週期與政策資料結構",
+      "phase": 1,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P1-003",
+      "title": "落實租戶隔離與授權測試",
+      "phase": 1,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P1-004",
+      "title": "實作狀態版本、稽核與可靠通知基礎",
+      "phase": 1,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P1-005",
+      "title": "實作可靠背景工作與資料隔離核心",
+      "phase": 1,
+      "status": "Done",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P1-006",
+      "title": "建立監測、備份驗證與第一階段審查",
+      "phase": 1,
+      "status": "Ready",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P2-001",
+      "title": "建立網頁應用程式框架、登入及旅程導覽",
+      "phase": 2,
+      "status": "Backlog",
+      "owner": "Gary"
+    },
+    {
+      "id": "P2-002",
+      "title": "建立手動協作功能與介面",
+      "phase": 2,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P2-003",
+      "title": "建立聊天室、資料收集、候選項目與行程介面",
+      "phase": 2,
+      "status": "Backlog",
+      "owner": "Gary"
+    },
+    {
+      "id": "P2-004",
+      "title": "建立歷史、復原、衝突及管理介面",
+      "phase": 2,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P2-005",
+      "title": "通過四人手動協作整合驗收",
+      "phase": 2,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P3-001",
+      "title": "實作安全網址擷取與內容隔離",
+      "phase": 3,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P3-002",
+      "title": "建立模型閘道與結構化資訊擷取",
+      "phase": 3,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P3-003",
+      "title": "建立證據、時效、去重、審查及成本控制",
+      "phase": 3,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P3-004",
+      "title": "建立連結及候選項目處理與失敗介面",
+      "phase": 3,
+      "status": "Backlog",
+      "owner": "Gary"
+    },
+    {
+      "id": "P3-005",
+      "title": "通過資料擷取安全、成本與整合審查",
+      "phase": 3,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P4-001",
+      "title": "建立有界上下文與有依據的資料檢索",
+      "phase": 4,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P4-002",
+      "title": "實作經授權的結構化行程操作",
+      "phase": 4,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P4-003",
+      "title": "建立智慧助手、澄清、拒絕及復原介面",
+      "phase": 4,
+      "status": "Backlog",
+      "owner": "Gary"
+    },
+    {
+      "id": "P4-004",
+      "title": "通過多語言人工智慧與安全操作評估",
+      "phase": 4,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P5-001",
+      "title": "完善文件權限、惡意檔案掃描與文字辨識",
+      "phase": 5,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P5-002",
+      "title": "完善離線、封存、匯出、分享與刪除",
+      "phase": 5,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P5-003",
+      "title": "完善管理、支援、資料保留與事件處理",
+      "phase": 5,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P5-004",
+      "title": "驗證部署、回復、備份與服務可靠性",
+      "phase": 5,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P5-005",
+      "title": "完成獨立安全、私隱與可靠性上線審查",
+      "phase": 5,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P6-001",
+      "title": "決定是否接入官方外部通訊渠道",
+      "phase": 6,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P6-002",
+      "title": "建立隔離的官方通訊渠道轉接器",
+      "phase": 6,
+      "status": "Backlog",
+      "owner": "Eddie"
+    },
+    {
+      "id": "P6-003",
+      "title": "執行渠道試點與備援驗證",
+      "phase": 6,
+      "status": "Backlog",
+      "owner": "共同負責"
+    },
+    {
+      "id": "P7-001",
+      "title": "依據實測結果選定後續工作",
+      "phase": 7,
+      "status": "Backlog",
+      "owner": "共同負責"
+    }
+  ]
+}

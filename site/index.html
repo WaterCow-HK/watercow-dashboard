@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="WaterCow 專案進度儀表板：查看各階段任務的已完成、待處理與審查狀態。"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <title>WaterCow｜專案進度</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#tasks">跳至任務清單</a>
+    <header>
+      <div class="brand">
+        <span class="logo" aria-hidden="true">W</span>WaterCow<span class="tag"
+          >專案進度</span
+        >
+      </div>
+      <span class="readonly">公開摘要 · 唯讀</span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">一步一步，讓旅程成形</p>
+        <h1 id="title">進度一目了然</h1>
+        <p>從開發基礎到協作體驗，查看 WaterCow 每個階段的任務進展。</p>
+        <p id="updated" class="muted">正在載入資料版本…</p>
+      </section>
+      <div id="notice" class="notice" role="status">正在載入任務摘要…</div>
+      <noscript
+        ><p class="notice">
+          請啟用 JavaScript 以查看任務清單。你亦可下載<a href="./tasks.json"
+            >任務摘要資料</a
+          >。
+        </p></noscript
+      >
+      <div id="dashboard" hidden>
+        <section aria-labelledby="overview-title">
+          <h2 id="overview-title">任務總覽</h2>
+          <div id="summary" class="summary"></div>
+        </section>
+        <section aria-labelledby="phases-title">
+          <div class="section-title">
+            <h2 id="phases-title">各階段任務進度</h2>
+            <span class="muted">按任務數計算，非工時估算</span>
+          </div>
+          <div id="phases" class="phases"></div>
+        </section>
+        <section id="tasks" aria-labelledby="tasks-title" tabindex="-1">
+          <div class="section-title">
+            <h2 id="tasks-title">任務清單</h2>
+            <span id="count" role="status" aria-live="polite"></span>
+          </div>
+          <div class="filters">
+            <label class="search"
+              >搜尋任務<input
+                id="query"
+                type="search"
+                placeholder="輸入任務名稱或編號"
+                autocomplete="off"
+            /></label>
+            <label
+              >階段<select id="phase">
+                <option value="">全部階段</option>
+              </select></label
+            >
+            <label
+              >狀態<select id="status">
+                <option value="">全部狀態</option>
+              </select></label
+            >
+            <label
+              >負責人<select id="owner">
+                <option value="">全部負責人</option>
+              </select></label
+            >
+            <button id="reset" type="button">清除篩選</button>
+          </div>
+          <ul id="list" class="task-list"></ul>
+          <p id="empty" class="empty" hidden>
+            找不到符合條件的任務，請調整搜尋或篩選條件。
+          </p>
+        </section>
+      </div>
+      <aside class="scope">
+        <h2>如何閱讀這個儀表板？</h2>
+        <p>
+          這是專案主要任務的資料快照，並非即時工作排程。子任務及歷史維護項目未列入；「已取代」項目不計入完成比例。待處理不代表受阻，可開始亦不代表已有人執行。
+        </p>
+        <p>
+          「已完成」只表示該任務已完成其核准範圍，不代表整個功能、階段或產品已可上線。階段百分比不是驗收結論。人工確認事項仍以內部正式記錄為準，本頁不推測或公開其內容。
+        </p>
+        <p>
+          資料由維護者從正式記錄匯出、審查後更新；沒有自動同步或登入功能，亦未加入訪客追蹤工具。原始程式碼及內部文件維持非公開。
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <span>WaterCow · 專案進度儀表板</span
+      ><a href="https://github.com/WaterCow-HK/watercow-dashboard"
+        >儀表板程式庫</a
+      >
+    </footer>
+  </body>
+</html>
